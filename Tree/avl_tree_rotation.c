@@ -76,7 +76,6 @@ struct node *insert(struct node *node, int key)
 
     if (node == NULL)
         return (createnode(key));
-
     if (key < node->key)
         node->left = insert(node->left, key);
     else if (key > node->key)
@@ -109,7 +108,6 @@ struct node *insert(struct node *node, int key)
         node->right = RIGHTROTATA(node->right);
         return LEFTROTATA(node);
     }
-
     return node;
 }
 
@@ -134,7 +132,6 @@ int main()
     root = insert(root, 3);
     root = insert(root, 2);
     root = insert(root, 5);
-
     preOrder(root);
     return 0;
 }

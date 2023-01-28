@@ -132,8 +132,8 @@ int main()
     printf("Linked list before insertion\n");
     linkedListTraversal(head);
      //head = insertAtFirst(head, 56);
-    // head = insertAtIndex(head, 56, 2);
-    head = insertAtEnd(head, 56);
+     head = insertAtIndex(head, 56, 2);
+    //head = insertAtEnd(head, 56);
     //head = insertafternode(head,second,56);
     //head=insert_in_ascending(head,40);
     //head=insert_in_ascending(head,14);

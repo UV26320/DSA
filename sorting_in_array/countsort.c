@@ -41,8 +41,8 @@ void countsort(int a[], int n)
         count[a[i]]++;
     }
 
-    i = 0;
-    j = 0;
+    i = 0;   // counter for count arry 
+    j = 0;   // counter for given arry  
 
     while (i < max + 1)
     {

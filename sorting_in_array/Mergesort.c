@@ -12,13 +12,12 @@ void printarry(int a[], int n)
 
 void merge(int a[], int low, int mid, int high)
 {
-
     int i, j, k, b[200];
     i = low;
     j = mid + 1;
     k = low;
 
-    while (i <= mid && j <= high)
+    while(i <= mid && j <= high)
     {
         if (a[i] < a[j])
         {
@@ -39,7 +38,6 @@ void merge(int a[], int low, int mid, int high)
         i++;
         k++;
     }
-
     while (j<=high)
     {
         b[k]=a[j];
@@ -53,12 +51,10 @@ void merge(int a[], int low, int mid, int high)
     }
 }
 
-   
-
 void mergesort(int a[],int low,int high){
       
      int mid;
-     if (low<high)
+     if(low<high)
      { 
         mid =(low+high)/2;
         mergesort(a,low,mid);
@@ -74,6 +70,5 @@ int main()
     printarry(a, n);
     mergesort(a, 0, 9);
     printarry(a, n);
-
     return 0;
 }

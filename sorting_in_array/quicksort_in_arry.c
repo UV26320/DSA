@@ -59,7 +59,7 @@ int quicksort(int a[], int low, int high)
 int main()
 {
 
-    int a[] = {20, 8, 4, 3, 10, 15, 45, 85, 95, 100};
+    int a[] = {20, 8,8, 4, 3, 10, 15, 45, 85, 95, 100};
     int n = 10;
     printarry(a, n);
     quicksort(a, 0, n - 1);

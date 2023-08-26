@@ -13,7 +13,6 @@ void creatarry(struct myarray *a,int tsize,int usize)
     // (*a).total_size=tsize;
     // (*a).used_size=usize;
     // (*a).ptr=(int*)malloc(tsize*sizeof(int));/
-
       a->total_size=tsize;
       a->used_size=usize;
       a->ptr=(int*)malloc(tsize*sizeof(int));
